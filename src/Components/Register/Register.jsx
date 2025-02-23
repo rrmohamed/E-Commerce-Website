@@ -13,11 +13,11 @@ const Register = () => {
   const {setUserLogin} = useContext(UserContext) ;
   
   const validationSchema = Yup.object().shape({
-    name : Yup.string().min(5 , "min lenght is 5").max(20 , "max lenght is 20").required("name is required"),
-    email : Yup.string().email("invalid email").required("email is required") ,
-    password : Yup.string().matches(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/ , "password must have capital, small letters and numbers ").required("password is required") ,
+    name : Yup.string().min(5 , "min lenght is 5").max(20 , "max lenght is 20").required("Name is required"),
+    email : Yup.string().email("Invalid Email").required("Email is required") ,
+    password : Yup.string().matches(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/ , "Password must have capital, small letters and numbers ").required("password is required") ,
     rePassword : Yup.string().oneOf([Yup.ref('password'), null], 'Passwords must match').required("Confirm Password is required"),
-    phone : Yup.string().matches(/^01[0125][0-9]{8}$/,"invalid egyption phone number").required("phone is required"),
+    phone : Yup.string().matches(/^01[0125][0-9]{8}$/,"Invalid Egyption phone number").required("Phone is required"),
 
   }) ;
 

@@ -16,8 +16,8 @@ const Login = () => {
   const {getCartItems} = useContext(CartContext) ;
   
   const validationSchema = Yup.object().shape({
-    email : Yup.string().email("invalid email").required("email is required") ,
-    password : Yup.string().matches(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/ , "password must have capital, small letters and numbers  ").required("password is required") ,
+    email : Yup.string().email("Invalid Email").required("Email is required") ,
+    password : Yup.string().matches(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$/ , "Password must have capital, small letters and numbers  ").required("Password is required") ,
   }) ;
 
   const handleLogin = (formValues)=>{
