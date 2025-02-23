@@ -1,5 +1,5 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import freshLogo from "../../assets/images/Aspire-Logo.png";
+import freshLogo from "../../assets/images/aspire logo.png";
 import { useContext, useState } from "react";
 import { UserContext } from './../../Context/UserContext';
 import { CartContext } from "../../Context/CardContext";
