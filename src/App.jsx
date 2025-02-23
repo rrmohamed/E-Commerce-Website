@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// import { createBrowserRouter, HashRouter, RouterProvider } from "react-router-dom";
 import Layout from './Components/Layout/Layout';
 import Login from './Components/Login/Login';
 import Notfound from './Components/Notfound/Notfound';
@@ -17,10 +17,11 @@ import Products from "./Components/Products/Products";
 import Landing from "./Components/Landing/Landing";
 import Payment from "./Components/Payment/Payment";
 import { Offline } from "react-detect-offline";
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 const App = () => {
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {path : "" , element : <Layout/> , children : [
       {index : true, element : <Landing/> } ,
       {path : "products" , element : <ProtectedRoute><Products/></ProtectedRoute> } ,
