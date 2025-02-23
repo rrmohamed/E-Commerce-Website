@@ -10,7 +10,7 @@ import { UserContextProvider } from "./Context/UserContext";
 import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute";
 import ProductDetails from "./Components/ProductDetails/ProductDetails";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from './../node_modules/@tanstack/react-query-devtools/src/production';
+// import { ReactQueryDevtools } from './../node_modules/@tanstack/react-query-devtools/src/production';
 import CardContextProvider from "./Context/CardContext";
 import { Toaster } from "react-hot-toast";
 import Products from "./Components/Products/Products";
@@ -45,7 +45,7 @@ const App = () => {
           <RouterProvider router={router} />
             <Toaster/>
         </CardContextProvider>  
-          <ReactQueryDevtools/>
+          {/* <ReactQueryDevtools/> */}
       </UserContextProvider>
     </QueryClientProvider>
 
