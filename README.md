@@ -1,6 +1,5 @@
 # Aspire Shopping 🛒
 
-![Aspire Shopping Screenshot](https://aspire-shopping.vercel.app/screenshot.png)
 
 ## Overview
 
@@ -67,7 +66,7 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 
 ## Contact 📬
 
-- **Email**: rrmohamed@example.com
+- **Email**: mohamedabdelkareem120@gmail.com
 - **GitHub**: [@rrmohamed](https://github.com/rrmohamed)
 
 ---
