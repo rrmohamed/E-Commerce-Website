@@ -60,10 +60,6 @@ We welcome contributions! To contribute:
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Open a pull request.
 
-## License 📄
-
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/rrmohamed/E-Commerce-Website/blob/master/LICENSE) file for details.
-
 ## Contact 📬
 
 - **Email**: mohamedabdelkareem120@gmail.com
