@@ -29,14 +29,14 @@ const ProductDetails = () => {
     console.log(resFlag) ;
     if(resFlag){
       toast.success("Added Product Sucessfuly" , {
-        position :"top-center" ,
+        position :"bottom-center" ,
         duration : 3000
       })
       setIsloadingAdd(false)
       setNumberOfCartItems(numberOfCartItems + 1)
     }else{
       toast.error("Adding product error" , {
-        position :"top-center" ,
+        position :"bottom-center" ,
         duration : 3000
       })
       // 

@@ -51,14 +51,14 @@ const RecentProducts = () => {
     console.log(resFlag) ;
     if(resFlag){
       toast.success("Product Added Sucessfuly" , {
-        position :"top-center" ,
+        position :"bottom-center" ,
         duration : 3000
       })
       setIsloadingAdd(false) ;
       setNumberOfCartItems(numberOfCartItems + 1)
     }else{
       toast.error("Product Added error" , {
-        position :"top-center" ,
+        position :"bottom-center" ,
         duration : 3000
       })
       // 

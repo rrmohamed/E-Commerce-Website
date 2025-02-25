@@ -17,10 +17,16 @@ const Cart = () => {
   async function handleDelete (productId){
     const resFlag = await removeCartItem(productId) ;
     if(resFlag){
-      toast.success("Product Removed successfully")
+      toast.success("Product Removed successfully" , {
+        position :"bottom-center" ,
+        duration : 3000
+      })
       setNumberOfCartItems(numberOfCartItems - 1)
     }else{
-      toast.error("Failed to Remove Product")
+      toast.error("Failed to Remove Product" , {
+        position :"bottom-center" ,
+        duration : 3000
+      })
     }
   }
   // const {getCartItems , removeCartItem ,updateCartItem} = useContext(CartContext) ;
