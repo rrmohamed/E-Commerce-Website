@@ -44,17 +44,19 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Social Media & Auth Links */}
+          {/* Social Media */}
           <div className={`flex flex-col lg:flex-row items-center gap-8 ${isOpen ? "block" : "hidden"} lg:flex w-full lg:w-auto`}>
             <ul className="flex items-center gap-1 social">
-              <li className="mr-10">
-                    <NavLink to="/cart" className="relative">
-                    <i className="fa-solid fa-cart-plus text-[22px]"></i>
-                      <div className="absolute top-[-24px] right-[-21px] bg-[#9333ea] text-white flex items-center justify-center size-6 rounded-full">
-                        {numberOfCartItems}
-                      </div>
-                    </NavLink>
-              </li>
+              {userLogin ? <> 
+                <li className="mr-10">
+                      <NavLink to="/cart" className="relative">
+                      <i className="fa-solid fa-cart-plus text-[22px]"></i>
+                        <div className="absolute top-[-24px] right-[-21px] bg-[#9333ea] text-white flex items-center justify-center size-6 rounded-full">
+                          {numberOfCartItems}
+                        </div>
+                      </NavLink>
+                </li>
+              </> : null}
               <li><Link className="social-icons" to="https://www.facebook.com"><i className="fa-brands cursor-pointer fa-facebook"></i></Link></li>
               <li><Link className="social-icons" to="https://x.com/"><i className="fa-brands cursor-pointer fa-x-twitter"></i></Link></li>
               <li><Link className="social-icons" to="https://www.instagram.com/"><i className="fa-brands cursor-pointer fa-instagram"></i></Link></li>
