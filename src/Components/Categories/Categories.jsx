@@ -34,7 +34,7 @@ const Categories = () => {
               Shop by Category
             </h1>
           </div>
-          <p className="text-gray-600 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-600 text-lg mb-12 max-w-3xl mx-auto leading-relaxed">
             Discover our carefully curated collection of premium products across various categories
           </p>
         </div>
@@ -50,10 +50,10 @@ const Categories = () => {
             <div key={category._id} className="opacity-0 animate-fade-up" style={{ animationDelay: `${index * 150}ms`, animationFillMode: 'forwards' }}>
               
 
-
-                <div className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+              <Link to= "/products">
+                <div className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl ">
                 {/* Background Image */}
-                <div className="relative h-72 w-full overflow-hidden">
+                <div className="relative h-72 w-full overflow-hidden hover:-translate-y-2">
                   <img
                     src={category.image}
                     alt={category.name}
@@ -75,14 +75,14 @@ const Categories = () => {
                   </p>
                   
                   {/* Button */}
-                    <Link to= "/products">
+                    
                       <button className="inline-flex items-center gap-2 bg-[#9333ea] text-white px-6 py-3 rounded-xl transition-all duration-300 hover:bg-opacity-90 transform group-hover:translate-x-2 shadow-lg hover:shadow-purple-500/25">
                           <span className="font-medium">Shop Now</span>
                           <ArrowRight className="w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-1" />
                       </button>
-                    </Link>
                 </div>
               </div>
+                  </Link>
 
 
             </div>

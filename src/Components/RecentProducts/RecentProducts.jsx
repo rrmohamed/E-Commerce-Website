@@ -86,11 +86,11 @@ const RecentProducts = () => {
           <div className="product">
             <Link to={`/productDetails/${product.id}/${product.category.name}`}>
               <img src={product.imageCover} alt={product.title} />
-              <div>
+              <div className="px-3 mt-2">
                 <span className="font-light text-main">{product.category.name}</span>
                 <h2 className="text-lg font-sm">{product.title.split(" ").slice(0, 2).join(" ")}</h2>
               </div>
-              <div className="flex justify-between items-center mt-4">
+              <div className="flex justify-between items-center mt-4 px-3">
                 <h1 className="text-sm font-bold">{product.price} EGP</h1>
                 <div>
                   {product.ratingsAverage} <i className="fa-solid fa-star rating-color"></i>

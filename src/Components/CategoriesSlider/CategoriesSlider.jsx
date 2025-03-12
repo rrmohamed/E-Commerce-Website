@@ -28,7 +28,7 @@ const CategoriesSlider = () => {
   return <>
   <div className="container mx-auto ">
     <div className=" py-3">
-      <h2 className="text-xl my-3 text-main">Shop Popular Categories</h2>
+      <h2 className="text-xl my-3  text-main">Shop Popular Categories</h2>
       <Slider {...settings}>
           {categories.map((category)=> <div className="" key={category._id}> 
             <img className="img-category-slider w-full" src={category.image} alt={category.name} />

@@ -1,16 +1,16 @@
-import Categories from "../Categories/Categories"
+// import Categories from "../Categories/Categories"
 import LandingFeature from "./LandinFeature/LandingFeature"
+import LandingBrands from "./LandingBrands/LandingBrands"
 import LandingHeader from "./LandingHeader/LandingHeader"
 import LandingSubscribe from "./LandingSubscribe/LandingSubscribe"
-// import LandingTestimonials from "./LandingTestimonials/LandingTestimonials"
 
 
 function Landing() {
   return <>
   <LandingHeader/>
   <LandingFeature/>
-  <Categories />
-  {/* <LandingTestimonials /> */}
+  <LandingBrands/>
+  {/* <Categories /> */}
   <LandingSubscribe/>
   </>
 }

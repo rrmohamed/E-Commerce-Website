@@ -1,5 +1,5 @@
 import { ChevronRight } from "lucide-react";
-import landingheader from "../../../assets/images/landing-header.avif" ;
+import landingheader from "../../../assets/images/hero5.webp" ;
 import { Link } from "react-router-dom";
 
 function LandingHeader() {
@@ -12,11 +12,11 @@ function LandingHeader() {
                 Discover Your Style, <br />
                 <span className="text-purple-600">Elevate Your Life</span>
               </h1>
-              <p className="text-lg md:text-xl text-gray-600 mb-8">
+              {/* <p className="text-lg md:text-xl text-gray-600 mb-8">
                 Explore our curated collection of premium products designed to bring elegance to your everyday life.
-              </p>
+              </p> */}
               <Link to="/products">
-                <button className="w-full sm:w-auto bg-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-purple-700 transition-colors flex items-center justify-center sm:justify-start">
+                <button className="mt-10 w-full sm:w-auto bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-gradient-to-r hover:from-purple-800 hover:to-pink-800 transition-colors flex items-center justify-center sm:justify-start">
                   Shop Now <ChevronRight className="ml-2" size={20} />
                 </button>
               </Link>
