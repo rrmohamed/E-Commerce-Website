@@ -26,7 +26,7 @@ const Register = () => {
     axios.post("https://ecommerce.routemisr.com/api/v1/auth/signup" , formValues)
     .then((apiResponse)=>{
       if(apiResponse.data.message === "success"){
-        navigate("/") ;
+        navigate("/login") ;
         localStorage.setItem("userToken" , apiResponse.data.token) ;
         setUserLogin(apiResponse.data.token) ;
         setIsLoading(false) ;
