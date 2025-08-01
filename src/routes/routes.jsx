@@ -1,7 +1,6 @@
 
 import {  createHashRouter } from "react-router-dom";
 import Landing from "../Components/Landing/Landing";
-import ProtectedRoute from "../Components/ProtectedRoute/ProtectedRoute";
 import Products from "../Components/Products/Products";
 import Brandes from "../Components/Brands/Brandes";
 import Cart from "../Components/Cart/Cart";
@@ -10,8 +9,9 @@ import Payment from "../Components/Payment/Payment";
 import ProductDetails from "../Components/ProductDetails/ProductDetails";
 import Register from "../Components/Register/Register";
 import Login from "../Components/Login/Login";
-import Notfound from "../Components/Notfound/Notfound";
+import Notfound from "../Components/Common/Notfound/Notfound";
 import Layout from "../Components/Layout/Layout";
+import ProtectedRoute from "../Components/Common/ProtectedRoute/ProtectedRoute";
 
 
 
