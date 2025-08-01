@@ -1,38 +1,14 @@
-import Layout from './Components/Layout/Layout';
-import Login from './Components/Login/Login';
-import Notfound from './Components/Notfound/Notfound';
-import Register from './Components/Register/Register';
-import Cart from "./Components/Cart/Cart";
-import Categories from "./Components/Categories/Categories";
-import Brandes from './Components/Brands/Brandes';
+
 import { UserContextProvider } from "./Context/UserContext";
-import ProtectedRoute from "./Components/ProtectedRoute/ProtectedRoute";
-import ProductDetails from "./Components/ProductDetails/ProductDetails";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import CardContextProvider from "./Context/CardContext";
 import { Toaster } from "react-hot-toast";
-import Products from "./Components/Products/Products";
-import Landing from "./Components/Landing/Landing";
-import Payment from "./Components/Payment/Payment";
+import { RouterProvider } from 'react-router-dom';
+import router from "./routes/routes";
 import { Offline } from "react-detect-offline";
-import { createHashRouter, RouterProvider } from 'react-router-dom';
 
 const App = () => {
 
-  const router = createHashRouter([
-    {path : "" , element : <Layout/> , children : [
-      {index : true, element : <Landing/> } ,
-      {path : "products" , element : <ProtectedRoute><Products/></ProtectedRoute> } ,
-      {path : "brands" , element :<ProtectedRoute><Brandes/></ProtectedRoute> } ,
-      {path : "cart" , element :<ProtectedRoute><Cart/></ProtectedRoute> } ,
-      {path : "categories" , element :<ProtectedRoute><Categories/></ProtectedRoute> } ,
-      {path : "payment" , element :<ProtectedRoute><Payment/></ProtectedRoute> } ,
-      {path : "productDetails/:id/:category" , element :<ProtectedRoute><ProductDetails/></ProtectedRoute> } ,
-      {path : "register" , element : <Register/>} ,
-      {path : "login" , element : <Login/>} ,
-      {path : "*" , element : <Notfound/>} ,
-    ]}
-  ]) ;
 
   const query = new QueryClient() ;
 
